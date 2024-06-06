@@ -9,6 +9,6 @@ public class Main{
         int b = sc.nextInt();
         int sum = a + b;
         System.out.print("The sum of given number is ");
-        System.out.println(sum);
+        System.out.println(sum); //Add the Integers
     }
 }
