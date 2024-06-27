@@ -31,7 +31,7 @@ public class Calculater_and_Month {
             case 3 -> System.out.println("3 is March");     
             case 4 -> System.out.println("4 is April");     
             case 5 -> System.out.println("5 is May");     
-            case 6 -> System.out.println("6bis June");     
+            case 6 -> System.out.println("6 bis June");     
             case 7 -> System.out.println("7 is July");     
             case 8 -> System.out.println("8 is August");     
             case 9 -> System.out.println("9 is September");     
