@@ -12,8 +12,7 @@ public class Asce_Desce {
             }
         }
         if(isAscending) {
-            int i = 0;
-            System.out.println(nums[i] + "This is sorted in Ascending form");
+            System.out.println("This is sorted in Ascending form");
         } else {
             System.out.println("This is not sorted in Ascending form");
         }
