@@ -16,6 +16,7 @@ public class Arryas2 {
             }
         }
         System.out.print("The transpose is: ");
+        
         for (int j = 0; j < m; j++) {
             for (int i = 0; i < n; i++) {
                 System.out.print(matrix[i][j] + " ");
