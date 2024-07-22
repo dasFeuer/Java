@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Arrays1{
+public class Array1{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

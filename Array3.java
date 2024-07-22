@@ -1,4 +1,4 @@
-public class Arrays3 {
+public class Array3 {
     public static void main(String[] args) {
         //Practice Problem 1
         /* float [] marks = {90.9f, 80.2f, 70.53f};
@@ -56,8 +56,31 @@ public class Arrays3 {
                 result[i][j] = mat1[i][j] + mat2[i][j];
             }
             System.out.println(""); // Print a new line 
-        } */
+        } 
 
-        // Practice Problem 5
+        // Practice Problem 6
+        int [] arr = {1, 32, 3, 547, 4, 9,77};
+        int max = 0;
+        for (int element : arr) {
+            if(element > max) {
+                max = element;
+            }
+        }
+        System.out.println("The value of maximum element in this array is " + max); */
+
+        //Practice Problem 7
+        boolean isSorted = true;
+        int [] arr = {1, 2, 3, 4, 5, 6, 7};
+        for (int i = 0; i < arr.length-1; i++) {
+           if (arr[i] > arr[i+1]) {
+            isSorted = false;
+            break;
+           }
+        }
+        if(isSorted) {
+            System.out.println("Array is sorted!");
+        } else {
+            System.out.println("Array is not sorted!");
+        }
     }
 }
