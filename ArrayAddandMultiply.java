@@ -5,19 +5,16 @@ public class ArrayAddandMultiply{
         for (int i = 0; i < row ; i++) {
             for (int j = 0; j < column; j++) {
                 matrixAdd[i][j] = row + column;
-                System.out.println(matrixAdd[i][j]);
             }
      
         }
 
-        
-
-        // for (int [] arr1 : matrixAdd) {
-        //     for (int arr2 : arr1) {
-        //         System.out.print(arr2 + " ");
-        //     }
-        //     System.out.println();
-        // }
+        for (int [] arr1 : matrixAdd) {
+            for (int arr2 : arr1) {
+                System.out.print(arr2 + " ");
+            }
+            System.out.println();
+        }
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
