@@ -1,21 +1,36 @@
 import java.util.Scanner;
 
 public class ArrayAddandMultiply{
-    public static void print_addedArray(int [][] matrixAdd, int row, int column){
+    public static void print_addedArray(int [][] matrix1, int [][] matrix2, int[][]sum, int row, int column){
         for (int i = 0; i < row ; i++) {
             for (int j = 0; j < column; j++) {
-                matrixAdd[i][j] = row + column;
+               sum[i][j] = matrix1[i][j] + matrix2[i][j];
             }
-     
         }
-
-        for (int [] arr1 : matrixAdd) {
-            for (int arr2 : arr1) {
-                System.out.print(arr2 + " ");
+        System.out.println("Added result:");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                System.out.print(sum[i][j] + " ");
             }
             System.out.println();
         }
     }
+    public static void print_MultiplyArray(int [][] matrix1, int [][] matrix2, int[][] multiply, int row, int column) {
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                multiply[i][j] = matrix1[i][j] * matrix2[i][j];
+            }
+        }
+
+        System.out.println("Multiplied result:");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                System.out.print(multiply[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Input row: ");
@@ -23,14 +38,29 @@ public class ArrayAddandMultiply{
         System.out.print("Input column: ");
         int column = sc.nextInt();
 
-        int [][] matrixAdd = new int[row][column];
+        int [][] matrix1 = new int[row][column];
+        int [][] matrix2 = new int [row][column];
+        int [][] sum = new int[row][column];
+        int [][] multiply = new int[row][column];
 
+        System.out.println("Print the elements for first matrix: ");
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
-                matrixAdd[i][j] = sc.nextInt();
+                matrix1[i][j] = sc.nextInt();
             }
         }
-        print_addedArray(matrixAdd, row, column);
+
+        System.out.println("Enter the elements for the second matrix: ");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                matrix2[i][j] = sc.nextInt();
+            }
+        }
+        System.out.println();
+        print_addedArray(matrix1, matrix2, sum, row, column);
+
+        System.out.println("------------------------------------");
+        print_MultiplyArray(matrix1, matrix2, multiply, row, column);
     }
 }
 
