@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class JavaP {
+public class CreateUsername {
 
     public static void createUsername(String email, String username) {
         for (int i = 0; i < email.length(); i++) {
