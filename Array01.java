@@ -2,7 +2,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Arr {
+public class Array01 {
     public static void addArr (int []input) {
         int sum = 0;
         for(int num: input) {

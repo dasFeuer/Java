@@ -1,4 +1,4 @@
-public class Array3 {
+public class Array02 {
     public static void main(String[] args) {
         //Practice Problem 1
         /* float [] marks = {90.9f, 80.2f, 70.53f};
