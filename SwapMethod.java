@@ -5,10 +5,10 @@ public class SwapMethod {
         System.out.println("Before swapping values are " + a + " and " + b);
         // Logik 1
 
-        // int temp;
-        // temp = a;
-        // a = b;
-        // b = temp;
+        // int temp; 
+        // temp = a; //  t = 3
+        // a = b; // a = 4
+        // b = temp; // b = 3
 
         //Logik 2
 
@@ -18,9 +18,9 @@ public class SwapMethod {
 
         //Logik 3
 
-        a = a * b;
-        b = a / b;
-        a = a / b;
+        a = a * b; // 3 * 4= 12
+        b = a / b; // 12 / 4 = 3
+        a = a / b; // 12 / 3 = 4 
         System.out.println("After swapping the value are " + a + " and " + b);
     }
     public static void main(String[] args){
