@@ -18,9 +18,19 @@ public class SwapMethod {
 
         //Logik 3
 
-        a = a * b; // 3 * 4= 12
-        b = a / b; // 12 / 4 = 3
-        a = a / b; // 12 / 3 = 4 
+        // a = a * b; // 3 * 4= 12
+        // b = a / b; // 12 / 4 = 3
+        // a = a / b; // 12 / 3 = 4 
+
+        //Logik 4
+
+        // a = a ^ b;
+        // b = a ^ b;
+        // a = a ^ b;
+
+        //Logik 5
+
+        b = a + b - (a = b);
         System.out.println("After swapping the value are " + a + " and " + b);
     }
     public static void main(String[] args){
